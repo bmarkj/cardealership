@@ -1,0 +1,18 @@
+./images/mb1972_280SE.jpg,989283,1972,Mercedes,280 SE,Sedan,Blue,50288,Classic,false,false,2020-05-03,null,14550,null,Gorgeous luxury in a classic touring sedan--one owner,null
+./images/porsche2020_718boxsters.jpg,354743,2020,Porsche,718 Boxster S,Convertible,White,0,New,false,false,2020-02-17,null,77500,null,This 2-seat roadster is equipped with a 2.5L turbo and 6-speed auto transmission,null
+./images/bmw1981_320i.jpg,135696,1981,BMW,320i,Sedan,Orange,77000,Classic,false,true,2019-11-17,null,15500,null,A classic Euro-luxury sport sedan with suprb power and handling,null
+./images/mb2019_xclass.jpg,542755,2019,Mercedes,X-Class,Pickup Truck,Yellow,18247,Used,false,true,2020-01-11,null,37990,null,The X350d delivers a big performance boost with a new V6 turbo-diesel and drivetrain,null
+./images/jag2020_xj.jpg,805827,2020,Jaguar,XJ,Sedan,Black,0,New,false,false,2020-04-22,null,123300,null,This sleek XJ is the long wheel base model with a 5.0 Liter V8 575hp Supercharged engine,null
+./images/audi2020_a5.jpg,361036,2020,Audi,A5 Cabriolet,Convertible,Silver,0,New,false,true,2020-01-04,null,49900,null,Feel the power of the 248hp turbocharged 2.0 liter TFSI quattro plus AWD in this finely appointed convertible,null
+./images/chevy1966_chevelle.jpg,890028,1966,Chevrolet,Chevelle SS 396,Convertible,Blue,44086,Classic,false,false,2020-04-10,null,54900,null,A sleek SS 396 with Hurst 4-speed and Holley 4 bbl carburetor,null
+./images/mb2020_c300.jpg,279577,2020,Mercedes,C 300,Convertible,Silver,0,New,false,true,2019-12-13,null,53950,null,Outstanding performance with luxurious appointments and great styling,null
+./images/jag2020_xe.jpg,519547,2020,Jaguar,XE-S,Sedan,Red,0,New,false,false,2020-02-12,null,46295,null,The XE S features a P300 AWD powertrain and is appointed with premium comfort and styling throughout,null
+./images/jag2020_fpace.jpg,541992,2020,Jaguar,F-Pace Sport,SUV,Blue,0,New,false,false,2020-03-17,null,56500,null,The R-Sport comes with the P250 AWD powertrain and features an assertive sporting style,null
+./images/pont1965_gto.jpg,191250,1965,Pontiac,GTO,Convertible,Red,67182,Classic,false,false,2020-04-17,null,37995,null,A completely restored muscle car from the glory years of street rods,null
+./images/porsche1985_911carrera.jpg,617304,1985,Porsche,911 Carrera,Sedan,Red,67255,Classic,true,false,2020-01-30,2020-05-21,124800,123500,A true 80's poster girl with magnificent styling and superb performance,Matt Farrah
+./images/ford1959_f100.jpg,460998,1959,Ford,F-100,Pickup Truck,Green,71250,Classic,false,false,2020-05-08,null,36900,null,Classic restored short bed flare side pickup with a straight 6,null
+./images/audi2018_rs5.jpg,576841,2018,Audi,RS 5,Sedan,Gray,8207,Used,false,true,2019-12-04,null,51950,null,A twin-turbocharged 2.9-liter V-6 makes this one quick and nimble,null
+./images/ford1969_bronco.jpg,440563,1969,Ford,Bronco,SUV,Blue,400,Classic,false,true,2019-11-11,null,99500,null,Perfect restoration of an iconic American SUV,null
+./images/porsche2017_carrera.jpg,347792,2017,Porsche,911 Carrera S,Sedan,Black,22378,Used,false,false,2020-04-20,null,84595,null,Ready to tour with a sunroof and a turbocharged 2.6L 7-speed drivetrain,null
+./images/pont1967_gto.jpg,381950,1967,Pontiac,GTO,Convertible,Red,45017,Classic,true,false,2019-11-05,2020-01-13,48500,47900,Restored and updated with electronic ignition and front disc brake conversion,Tim Allen
+./images/ford1967_shelbyGT500.jpg,711834,1967,Ford,Shelby GT 500,sedan,White,31846,Classic,true,false,2019-12-18,2020-02-17,193000,212500,The iconic Ford muscle car built in collaboration with the Shelby Cobra company,Jay Leno
