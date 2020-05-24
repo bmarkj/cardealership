@@ -1,0 +1,118 @@
+.addVehicle {
+	width: 350px;
+}
+.center {
+	text-align: center;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+}
+ul li {
+	list-style: none;
+}
+.bn {
+	border: none;
+  	padding: 0;
+  	background: none;
+}
+.detailpage {
+	margin: auto;
+	width: 500px;
+}
+.reportpage {
+	margin-left: 350px;
+	width: 300px;
+}
+
+.details li {
+	padding-left: 15px;
+	list-style: none;
+}
+.detailHeader {
+	display: inline-block;
+	margin-left: auto;
+}
+.return {
+	border: none;
+	background: none;
+	margin-top: 7px;
+	margin-right: 10px;
+	float: right;
+}
+.btn-buy{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 4px;
+}
+.spacer {
+	margin-top: -50px;
+	margin-bottom: 0;
+	height: 35px;
+	width: 100%;
+}
+.filter {
+	color: white;
+	text-align: center;	
+}
+#outer {
+	width:100%;
+    text-align: center;
+}
+.inner {
+	 display: inline-block;
+}
+.message {
+	color: red;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+.topper {
+	margin-top: 5px;
+}
+
+
+
+
+/* .jumbotron { */
+/*   padding-top: 3rem; */
+/*   padding-bottom: 3rem; */
+/*   margin-bottom: 0; */
+/*   background-color: #fff; */
+/* } */
+/* @media (min-width: 768px) { */
+/*   .jumbotron { */
+/*     padding-top: 6rem; */
+/*     padding-bottom: 6rem; */
+/*   } */
+/* } */
+
+/* .jumbotron p:last-child { */
+/*   margin-bottom: 0; */
+/* } */
+
+/* .jumbotron h1 { */
+/*   font-weight: 300; */
+/* } */
+
+/* .jumbotron .container { */
+/*   max-width: 40rem; */
+/* } */
+
+/* footer { */
+/*   padding-top: 3rem; */
+/*   padding-bottom: 3rem; */
+/* } */
+
+/* footer p { */
+/*   margin-bottom: .25rem; */
+/* } */
