@@ -35,7 +35,7 @@ public class GenerateReportServlet extends HttpServlet {
 		ArrayList<Vehicle> soldVehicles = new ArrayList<Vehicle>();
 		ArrayList<Vehicle> discountedVehicles = new ArrayList<Vehicle>();
 		
-		Comparator<Vehicle> compareByDate = new Comparator<Vehicle>() {
+		Comparator<Vehicle> compareByDateSold = new Comparator<Vehicle>() {
 			
 			@Override
 			public int compare(Vehicle arg0, Vehicle arg1) {
@@ -43,6 +43,16 @@ public class GenerateReportServlet extends HttpServlet {
 				return arg0.getDateSold().compareTo(arg1.getDateSold());
 			}
 		};
+		
+		Comparator<Vehicle> compareByDateAdded = new Comparator<Vehicle>() {
+			
+			@Override
+			public int compare(Vehicle arg0, Vehicle arg1) {
+					
+				return arg0.getDateAdded().compareTo(arg1.getDateAdded());
+			}
+		};
+		
 
 		String message = "";
 		session.setAttribute("message", message);
@@ -75,7 +85,7 @@ public class GenerateReportServlet extends HttpServlet {
 			else {
 				message = "";
 				session.setAttribute("message", message);
-				Collections.sort(soldVehicles, compareByDate.reversed());
+				Collections.sort(soldVehicles, compareByDateSold.reversed());
 				session.setAttribute("soldVehicles", soldVehicles);
 				session.setAttribute("discountedVehicles", "");
 				
@@ -85,7 +95,6 @@ public class GenerateReportServlet extends HttpServlet {
 			rs.forward(request, response);
 		}
 		else {
-			System.out.println("Inside report == discVeh");
 			for(Vehicle vehicle : masterInventory) {
 				if(vehicle.isOver120() && !vehicle.isSold()) {
 					discountedVehicles.add(vehicle);
@@ -99,7 +108,7 @@ public class GenerateReportServlet extends HttpServlet {
 			}
 			else {
 				message = "";
-				
+				Collections.sort(discountedVehicles, compareByDateAdded);
 				session.setAttribute("message", message);
 				session.setAttribute("soldVehicles", "");
 				session.setAttribute("discountedVehicles", discountedVehicles);

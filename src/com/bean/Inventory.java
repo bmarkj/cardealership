@@ -23,7 +23,7 @@ public class Inventory {
 	
 	//METHODS
 	public static ArrayList<Vehicle> readDataFile() {
-		String fileName = "C:\\Users\\Mark\\Desktop\\caCarDealer\\inventory.txt";
+		String fileName = "C:\\Users\\Mark\\Code\\Java\\ClaimAcademy\\MainCoursework\\CarDealership\\inventory.txt";
 		ArrayList<Vehicle> vehFromDataFile = new ArrayList<Vehicle>();
 		
 		try {
@@ -77,7 +77,7 @@ public class Inventory {
 	
 	
 	public static void addToDataFile(String newVehicle) {
-		File file = new File("C:\\Users\\Mark\\Desktop\\caCarDealer\\inventory.txt");
+		File file = new File("C:\\Users\\Mark\\Code\\Java\\ClaimAcademy\\MainCoursework\\CarDealership\\inventory.txt");
 		
 		try {
 			if(!file.exists()){
@@ -107,7 +107,7 @@ public class Inventory {
 		
 		ArrayList<Vehicle> inventory = vehicles;
 		
-		File file = new File("C:\\Users\\Mark\\Desktop\\caCarDealer\\inventory.txt"); 
+		File file = new File("C:\\Users\\Mark\\Code\\Java\\ClaimAcademy\\MainCoursework\\CarDealership\\inventory.txt"); 
 
 		if(file.exists()) {
 			file.delete();

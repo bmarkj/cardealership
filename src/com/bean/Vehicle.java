@@ -74,7 +74,6 @@ public class Vehicle implements Comparable<Vehicle>{
 
 	@Override
 	public int compareTo(Vehicle o) {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
