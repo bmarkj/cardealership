@@ -56,7 +56,6 @@ public class Vehicle implements Comparable<Vehicle>{
 		}else {
 			this.isOver120 = false;
 		}
-		
 	}
 	
 	
@@ -70,7 +69,6 @@ public class Vehicle implements Comparable<Vehicle>{
 		long days = ChronoUnit.DAYS.between(addedDate, currentDate);
 		
 		return days;
-		
 	}
 	
 
@@ -87,6 +85,7 @@ public class Vehicle implements Comparable<Vehicle>{
 				"," + miles + "," + condition + "," + isSold + "," + isOver120 + "," + dateAdded + "," + dateSold + "," + priceSticker + 
 				"," + priceSold + "," + description + "," + buyer;
 	}
+	
 	
 	//GET-SET
 	public String getImgSrc() {

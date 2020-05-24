@@ -18,13 +18,7 @@ public class Inventory {
 
 	
 	//CONSTRUCTORS
-	public Inventory() {
-		
-	}
-	
-	public Inventory(ArrayList<Vehicle> inventory) {
-		
-	}
+	public Inventory(ArrayList<Vehicle> inventory) {}
 	
 	
 	//METHODS
@@ -65,11 +59,8 @@ public class Inventory {
 		}catch (FileNotFoundException e) {
 			System.out.println("Error reading from file.");
 		}
-		
 		return vehFromDataFile;
-		
 	}//end readDataFile
-	
 	
 	
 	public static ArrayList<Vehicle> filterSoldVehicles () {
@@ -81,10 +72,8 @@ public class Inventory {
 				unsoldInventory.add(vehicle);
 			}
 		}
-		
 		return unsoldInventory;
 	}
-	
 	
 	
 	public static void addToDataFile(String newVehicle) {
@@ -112,7 +101,6 @@ public class Inventory {
 	    	 ioe.printStackTrace();
 	    }
 	}//end addToDataFile
-	
 	
 	
 	public static void updateDataFile (ArrayList<Vehicle> vehicles) {
@@ -148,11 +136,8 @@ public class Inventory {
 				System.out.println("Unable to write to file.");
 				e.printStackTrace();
 			}
-			
 		}
-
 	}//end updateDataFile
-
 
 	
 	public static ArrayList<String> listAllMakes (ArrayList<Vehicle> vehicles) {
@@ -164,9 +149,9 @@ public class Inventory {
 				allMakes.add(vehicle.getMake());
 			}
 		}
-		
 		return allMakes;
 	}
+	
 	
 	public static ArrayList<String> listAllConditions (ArrayList<Vehicle> vehicles) {
 		
@@ -177,23 +162,10 @@ public class Inventory {
 				allConditions.add(vehicle.getCondition());
 			}
 		}
-
 		return allConditions;
 	}
 	
 
-//	public static ArrayList<Vehicle> sortVehicles (ArrayList<Vehicle> vehicles) {
-//		
-//		for (Vehicle vehicle : vehicles) {
-//			LocalDate dateSold = LocalDate.parse(vehicle.getDateSold());
-//			LocalDate currentDate = LocalDate.now();
-//			
-//		}
-//		
-//		return null;
-//	}
-	
-	
 	//GET-SET
 	public ArrayList<Vehicle> getInventory() {
 		return inventory;

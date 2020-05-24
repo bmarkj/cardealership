@@ -21,7 +21,6 @@ public class DisplayDetailsServlet extends HttpServlet {
     
     public DisplayDetailsServlet() {
         super();
-       
     }
 
 	

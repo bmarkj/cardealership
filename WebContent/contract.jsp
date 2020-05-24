@@ -47,17 +47,21 @@
 						<label for="priceSticker"><b>Sticker Price:</b>&nbsp; $</label><span>${thisVehicle.priceSticker}</span>
 						<br>
 						<br>
-						<label for="priceOffered"><b>Buyer's Offer:</b></label> <input type="text"
-							class="form-control" name="priceOffered" id="priceOffered">
+						<label for="priceOffered"><b>Buyer's Offer:</b></label>
+						<input type="text" class="form-control" name="priceOffered" id="priceOffered">
 					</div>
 					<span class="message"><c:out value="${message}" /></span>
 					<br>
 					<br>
 					<div id="outer">
-					<input type="hidden" name="vehId" value="${thisVehicle.vehId }" />
-					<div class="inner"><button type="submit" class="btn btn-info">Submit</button></div>
-					<div class="inner"><a href="index.jsp" class="text-white"><button type="button" class="btn btn-info">Cancel</button></a></div>
-				</div>
+						<input type="hidden" name="vehId" value="${thisVehicle.vehId }" />
+						<div class="inner">
+							<button type="submit" class="btn btn-info">Submit</button>
+						</div>
+						<div class="inner">
+							<a href="index.jsp" class="text-white"><button type="button" class="btn btn-info">Cancel</button></a>
+						</div>
+					</div>
 				</form>
 			</div>
 		</div>

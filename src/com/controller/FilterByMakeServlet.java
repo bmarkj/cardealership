@@ -55,12 +55,10 @@ public class FilterByMakeServlet extends HttpServlet {
 			RequestDispatcher rs = request.getRequestDispatcher("filtered.jsp");
 			rs.forward(request, response);
 		}
-		
 	}//end doGet
-
+	
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
 		doGet(request, response);
 	}
 

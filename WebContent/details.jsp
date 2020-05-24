@@ -9,7 +9,6 @@
 		<meta charset="ISO-8859-1">
 		<title>Vehicle Details</title>
 		<link rel="stylesheet" href="./css/style.css" type="text/css">
-		
 	</head>
 	
 	<body>
@@ -38,15 +37,11 @@
 			<hr>
 			<ul>
 				<c:if test="${!test120}">
-					<li>
-						<li><a href="contract.jsp"><button class="btn-buy">Buy Now!</button></a></li>
-					<li>
+					<li><a href="contract.jsp"><button class="btn-buy">Buy Now!</button></a></li>
 				</c:if>
 				<c:if test="${test120}">
-					<li>
-					<li><p>This vehicle is eligible for a discount! Click to place a bid.
-						<li><a href="contract.jsp"><button class="btn-buy">Place A Bid</button></a></li>
-					<li>
+					<li>This vehicle is eligible for a discount! Click to place a bid.</li>
+					<li><a href="contract.jsp"><button class="btn-buy">Place A Bid</button></a></li>
 				</c:if>
 			</ul>
 		</div>

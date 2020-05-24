@@ -8,7 +8,6 @@
 		<title>Add A Vehicle To Inventory</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="./css/style.css" type="text/css">
-	
 	</head>
 
 	<body>
@@ -57,12 +56,10 @@
 					</select>
 				</div>
 				<div>
-				<br>
+					<br>
 					<label for="dateAdded">Date Added: </label>
 					<br>
 					<input type="date" name="dateAdded" value="dateAdded" id="datepicker" >
-				</div>
-				<div class="form-group">
 				</div>
 				<div class="form-group">
 					<label for="priceSticker">Sticker Price:</label>
@@ -72,13 +69,10 @@
 					<label for="description">Description: </label>
 					<input type="text" class="form-control" name="description" id="description" >
 				</div>
-				
 				<div id="outer">
 					<div class="inner"><button type="submit" class="btn btn-info">Submit</button></div>
 					<div class="inner"><a href="index.jsp" class="text-white"><button type="button" class="btn btn-info">Cancel</button></a></div>
 				</div>
-				
-				
 			</form>
 		</div>
 	</body>

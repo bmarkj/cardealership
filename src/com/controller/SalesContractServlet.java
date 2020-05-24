@@ -21,10 +21,8 @@ public class SalesContractServlet extends HttpServlet {
     
     public SalesContractServlet() {
         super();
-        
     }
 
-	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		HttpSession session = request.getSession(true);
@@ -48,14 +46,13 @@ public class SalesContractServlet extends HttpServlet {
 		int priceSticker;
 		int offer = Integer.parseInt(buyersOffer);
 		
-		
 		@SuppressWarnings("unchecked")
 		ArrayList<Vehicle> masterInventory = (ArrayList<Vehicle>) session.getAttribute("masterInventory");
 		for(Vehicle vehicle : masterInventory) {
 			if (vehicle.getVehId().equals(thisVehId)) {
 				priceSticker = Integer.parseInt(vehicle.getPriceSticker());
 				if(vehicle.isOver120()) {
-					if (offer >= (priceSticker * .90) ) {
+					if (offer >= (priceSticker * .90)) {
 						vehicle.setSold(true);
 						vehicle.setDateSold(dateSold);
 						vehicle.setBuyer(buyer);
@@ -68,14 +65,14 @@ public class SalesContractServlet extends HttpServlet {
 						
 						RequestDispatcher rs = request.getRequestDispatcher("sold.jsp");
 						rs.forward(request, response);
-					}//end (offer >= (priceSticker * .90) )
+					}
 					else {
 						message = "Unfortunately we are unable to sell the vehicle for that amount. Please consider making another offer.";
 						session.setAttribute("message",  message);
 						RequestDispatcher rs = request.getRequestDispatcher("contract.jsp");
 						rs.forward(request, response);
 					}
-				}//end if(vehicle.isOver120())
+				}
 				else {
 					if (offer >= (priceSticker * .97) ) {
 						vehicle.setSold(true);
@@ -90,23 +87,20 @@ public class SalesContractServlet extends HttpServlet {
 						
 						RequestDispatcher rs = request.getRequestDispatcher("sold.jsp");
 						rs.forward(request, response);
-					}//end if (offer >= (priceSticker * .97) )
+					}
 					else {
 						message = "Unfortunately we are unable to sell the vehicle for that amount. Please consider making another offer.";
 						session.setAttribute("message",  message);
 						
 						RequestDispatcher rs = request.getRequestDispatcher("contract.jsp");
 						rs.forward(request, response);
-					}//end else for if (offer >= (priceSticker * .97) )
-				}//end else for if(vehicle.isOver120())
-			}//end if (vehicle.getVehId == ...
-		}//end for (Vehicle vehicle : vehicles)		
-		
+					}
+				}//end if...else for (vehicle.isOver120())
+			}//end if...else for (vehicle.getVehId().equals(thisVehId))
+		}//end for (Vehicle vehicle : vehicles)...		
 	}//end doGet
 
-	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		doGet(request, response);
 	}
 

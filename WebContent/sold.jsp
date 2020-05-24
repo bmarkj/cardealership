@@ -13,12 +13,12 @@
 			crossorigin="anonymous">
 		<link rel="stylesheet" href="./css/style.css" type="text/css">
 	</head>
-		<body class="detailpage">
-			<h3>Thank you!</h3>
-			<span class="message" ><c:out value="${message}" /></span>
-			<br>
-			<br>
-			<a href="index.jsp" ><button class="btn btn-info" >Exit</button></a>
-		
-		</body>
+
+	<body class="detailpage">
+		<h3>Thank you!</h3>
+		<span class="message"><c:out value="${message}" /></span>
+		<br>
+		<br>
+		<a href="index.jsp"><button class="btn btn-info">Exit</button></a>
+	</body>
 </html>

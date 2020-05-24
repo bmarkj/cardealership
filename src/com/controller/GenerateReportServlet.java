@@ -36,10 +36,10 @@ public class GenerateReportServlet extends HttpServlet {
 		ArrayList<Vehicle> discountedVehicles = new ArrayList<Vehicle>();
 		
 		Comparator<Vehicle> compareByDate = new Comparator<Vehicle>() {
-
+			
 			@Override
 			public int compare(Vehicle arg0, Vehicle arg1) {
-				
+					
 				return arg0.getDateSold().compareTo(arg1.getDateSold());
 			}
 		};
@@ -108,12 +108,9 @@ public class GenerateReportServlet extends HttpServlet {
 			RequestDispatcher rs = request.getRequestDispatcher("reports.jsp");
 			rs.forward(request, response);
 		}
-
 	}//end doGet
 
-	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		doGet(request, response);
 	}
 

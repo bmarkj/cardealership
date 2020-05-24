@@ -18,8 +18,7 @@ public class AddVehServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     public AddVehServlet() {
-        super();
-        
+        super();  
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -42,7 +41,6 @@ public class AddVehServlet extends HttpServlet {
 		String description = request.getParameter("description");
 		String buyer = null;
 		
-		
 		//write to inventory.txt using addInventory method of Class Inventory
 		String newVehicle = imgSrc + "," + vehId + "," + year + "," + make + "," + model + "," + bodyStyle + "," + color +
 				"," + miles + "," + condition + "," + isSold + "," + isOver120 + "," + dateAdded + "," + dateSold + "," + priceSticker + 
@@ -51,12 +49,11 @@ public class AddVehServlet extends HttpServlet {
 		
 		RequestDispatcher rs = request.getRequestDispatcher("index.jsp");
 		rs.forward(request, response);
-		
 	}
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		
 		doGet(request, response);
 	}
 
